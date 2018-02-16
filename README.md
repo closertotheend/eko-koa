@@ -43,5 +43,8 @@ A Koa starter pack based on Objection, Knex and EJS. This is a sane alternative 
 - Community/PR/Forking/Issues welcome!
 
 ### Todo:
-- Lots of documentation
+- Lots of documentation (PRs welcome!)
+- Mailers (PRs welcome!)
+- Basic auth capabilities (PRs welcome!)
+
 
