@@ -1,5 +1,5 @@
 # eko-koa
-A Koa starter pack based on Objection, Knex and EJS. This is a sane alternative for frameworks such as Sails and Adonis. PR and forking are welcome!
+A Koa starter pack based on EJS, Knex anf Objection. This is a sane alternative for frameworks such as Sails and Adonis. PR and forking are welcome!
 
 
 ### Requirements and installation:
