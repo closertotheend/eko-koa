@@ -1,0 +1,10 @@
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 1rem;
+  background: linear-gradient()
+}
+
+.bold {
+    font-weight: 600;
+}

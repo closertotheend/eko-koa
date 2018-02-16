@@ -1,0 +1,56 @@
+{
+  "name": "eko-koa",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon routes.js",
+    "production": "NODE_ENV=production node routes.js",
+    "testing": "NODE_ENV=testing node routes.js",
+    "prettier": "prettier --no-config --write '**/*.js'",
+    "knex": "knex",
+    "pm2": "pm2",
+    "test": "NODE_ENV=unit-tests ava --serial",
+    "test-watch": "NODE_ENV=unit-tests ava --serial --watch",
+    "coverage": "NODE_ENV=unit-tests nyc ava --serial"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ava": "^0.25.0",
+    "cron": "^1.3.0",
+    "knex": "^0.14.2",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-compress": "^2.0.0",
+    "koa-conditional-get": "^2.0.0",
+    "koa-ejs": "^4.1.0",
+    "koa-etag": "^3.0.0",
+    "koa-flash-simple": "0.0.3",
+    "koa-helmet": "^3.3.0",
+    "koa-i18n": "^2.1.0",
+    "koa-locale": "^1.3.0",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.8.1",
+    "koa-static": "^4.0.2",
+    "mariasql": "^0.2.6",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.2",
+    "nodemon": "^1.14.11",
+    "nyc": "^11.4.1",
+    "objection": "^1.0.0",
+    "pg": "^7.4.1",
+    "pm2": "^2.9.3",
+    "pretty-error": "^2.1.1",
+    "sqlite3": "^3.1.13",
+    "superkoa": "^1.0.3",
+    "youch": "^2.0.7"
+  },
+  "devDependencies": {
+    "prettier": "1.10.2"
+  }
+}

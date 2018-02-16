@@ -1,0 +1,45 @@
+<h3><%- helloTranslation %>, <%- __('you have been here') %> <%- numberOfViews %>  <%- __('times') %></h3>
+
+<br/>
+    
+<table class="c-table c-table--striped">
+    <caption class="c-table__caption">List of users</caption>
+    <thead class="c-table__head">
+        <tr class="c-table__row c-table__row--heading">
+            <th class="c-table__cell">id</th>
+            <th class="c-table__cell">name</th>
+            <th class="c-table__cell">updated_at</th>
+            <th class="c-table__cell">created_at</th>
+        </tr>
+    </thead>
+    <tbody class="c-table__body">
+        <% users.forEach(user => { %>
+            <tr class="c-table__row">
+                <td class="c-table__cell">
+                    <%-user.id %>
+                </td>
+                <td class="c-table__cell">
+                    <%-user.name %>
+                </td>
+                <td class="c-table__cell">
+                    <%-user.updated_at %>
+                </td>
+                <td class="c-table__cell">
+                    <%-user.created_at %>
+                </td>
+            </tr>
+            <% }) %>
+    </tbody>
+</table>
+
+<br>
+<br>
+
+<h1 class="c-heading u-large">Add new user</h1>
+<form action="/user" method="post">
+    <div class="o-form-element">
+        <label class="c-label" for="name">Name:</label>
+        <input name="name" class="c-field" placeholder="Type in here..." type="text" />
+    </div>
+    <input type="submit" class="c-button c-button--success" value="Add user">
+</form>

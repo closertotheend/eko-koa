@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <title>koa ejs</title>
+  <link rel="stylesheet" href="https://unpkg.com/blaze">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div>
+    <% if(flash){ %>
+      <div class="c-alerts c-alerts--topright">
+        <div class="c-alert c-alert--info">
+          <%= flash %>
+        </div>
+      </div>
+      <% } %>
+  </div>
+  <div style="display:flex; justify-content:flex-end">
+    <a class="<% if(currentLang === 'en'){ %> bold <% } %>" href="/changeLang/en" style="margin-right:1rem">EN</a>
+    <a class="<% if(currentLang === 'ru'){ %> bold <% } %>" href="/changeLang/ru">RU</a>
+  </div>
+  <h2>Welcome to Eko-Koa</h2>
+  <%- body %>
+</body>
+
+</html>
