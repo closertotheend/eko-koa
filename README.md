@@ -29,6 +29,7 @@ A Koa starter pack based on EJS, Knex anf Objection. This is a sane alternative 
 - Session management via cookies
 - Flash messages
 - Cron job support
+- 404 page handling
 - Drivers for pg/mysql/maria/sqlite
 - Hot reload for development (nodemon)
 - Formatting tool (prettier)
